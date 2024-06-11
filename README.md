@@ -14,3 +14,7 @@ docker build -t my-fast-api-image .
 ```bash
 docker run -p "8000:8000" --name my-fast-api-container my-fast-api-image
 ```
+
+## Look into the container
+```bash
+docker exec -it <containerid> /bin/bash
