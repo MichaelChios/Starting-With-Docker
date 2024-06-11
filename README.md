@@ -1,4 +1,5 @@
 # Starting With Docker
+Basic actions to learn about dockers, shown by a friend.
  
 ## Run manually
 ```bash
