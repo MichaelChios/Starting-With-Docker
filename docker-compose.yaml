@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  web:
+    build: ./app
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+    depends_on:
+      - db
+    networks:
+      - mynet
+
+  db:
+    build: ./database
+    ports:
+      - "4000:3306"
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge

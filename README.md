@@ -12,6 +12,5 @@ docker build -t my-fast-api-image .
 
 ## Docker run
 ```bash
-docker run -p "8000:8000" --name
-my-fast-api-container my-fast-api-image
+docker run -p "8000:8000" --name my-fast-api-container my-fast-api-image
 ```
